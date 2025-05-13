@@ -14,4 +14,4 @@
 ---
 
 ## Answer
-<details><summary>Answer</summary><img sr="https://i.imgur.com/iZ4RMN9.png"></details>
+<details><summary>Answer</summary><img src="https://i.imgur.com/iZ4RMN9.png"></details>
