@@ -10,3 +10,8 @@
 5. cypress open
 6. delete content from the folder integration
 7. create empty file from there, naviation.spec.js
+
+---
+
+## Answer
+<details><summary>Answer</summary><img sr="https://i.imgur.com/iZ4RMN9.png"></details>
