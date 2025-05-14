@@ -14,4 +14,4 @@
 ---
 
 ## Answer
-<details><summary>Answer</summary><img src="https://i.imgur.com/iZ4RMN9.png"></details>
+<details><summary>1. Navigation File</summary><img src="https://i.imgur.com/0ts2fm8.png"></details>
