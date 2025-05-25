@@ -10,3 +10,4 @@
 |4|Tripple-Slash Directive||`/// <reference types="cypress" />`|<img src="https://i.imgur.com/Jqiv11Y.png">|
 |5|Commands Cypress||`cy.visit("URL")`<br/><br/>`cy.get("h1").contains("View Sessions").click();`<br/><br/>`cy.url().should("include", "/sessions");`|
 |6|Hooks||`before(() => {`<br/>`  // root-level hook`<br/>`  // runs once before all tests`<br/>`});`<br/><br/>`beforeEach(() => {`<br/>`  // root-level hook`<br/>`  // runs before every test block`<br/>`});`<br/><br/>`afterEach(() => {`<br/>`  // runs after each test block`<br/>`});`<br/><br/>`after(() => {`<br/>`  // runs once all tests are done`<br/>`});`|
+|7|describe|Group together||<img src="https://i.imgur.com/CDVdA9L.png">|
