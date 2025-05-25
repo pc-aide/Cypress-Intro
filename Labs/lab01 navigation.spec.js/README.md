@@ -12,8 +12,8 @@
 7. Create empty file from there, `navigation.spec.js`  
     7.1 Add Triple-Slash-Directive<br/>
     7.2 Add describe fonction from Mocha with title, Navigation<br/>
-    7.3 Visit /conference<br/>
-    7.4 simulate click on 'View Sessions'<br/>
+    7.3 Visit /conference as a URL<br/>
+    7.4 simulate click on 'View Sessions'<br/><img src="https://i.imgur.com/V3dqgE6.png">
     7.5
 
 ---
