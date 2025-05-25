@@ -12,4 +12,4 @@
 ## Child Commands
 |n|name|desc.|e.g.|O/P|
 |-|----|-----|----|---|
-|1||Chained off a parent command, or another child command|
+|1||Chained off a parent command, or another child command|`cy.get("[data-cy=speakerProfile]").clock();`|
