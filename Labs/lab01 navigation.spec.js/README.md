@@ -14,5 +14,6 @@
 ---
 
 ## Answer
-<details><summary>1. Navigation File</summary><img src="https://i.imgur.com/0ts2fm8.png"></details>
-<details><summary>2. O/P</summary><img src="https://i.imgur.com/XWF4bkL.png"></details>
+<details><summary>1. CLI Started</summary><img src=""></details>
+<details><summary>2. Navigation File</summary><img src="https://i.imgur.com/0ts2fm8.png"></details>
+<details><summary>3. O/P</summary><img src="https://i.imgur.com/XWF4bkL.png"></details>
