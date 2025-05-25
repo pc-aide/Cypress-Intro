@@ -10,10 +10,10 @@
 5. cypress open
 6. delete content from the folder integration
 7. Create empty file from there, `navigation.spec.js`  
-    7.1 Add Triple-Slash-Directive
-    7.2 Add describe fonction from Mocha with title, Navigation
-    7.3 Add the command visit /conference
-    7.4 Add the method Get, from h1, View Sessions
+    7.1 Add Triple-Slash-Directive<br/>
+    7.2 Add describe fonction from Mocha with title, Navigation<br/>
+    7.3 Visit /conference<br/>
+    7.4 simulate click on 'View Sessions'<br/>
     7.5
 
 ---
