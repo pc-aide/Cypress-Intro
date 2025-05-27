@@ -12,4 +12,4 @@
 ## Child Commands
 |n|name|desc.|e.g.|O/P|
 |-|----|-----|----|---|
-|1||Chained off a parent command, or another child command|`cy.get("[data-cy=speakerProfile]").clock();`|
+|1||Chained off a parent command, or another child command|`cy.get("[data-cy=speakerProfile]").click();`<br/>`ci.get("[data-cy=sessionTitle]").type("My new session");`<br/>`cy.get(".conference").find("footer");`<br/>`cy.contains("ul", "room number").should("be.visible");`|
