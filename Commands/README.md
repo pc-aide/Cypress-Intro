@@ -13,3 +13,10 @@
 |n|name|desc.|e.g.|O/P|
 |-|----|-----|----|---|
 |1||Chained off a parent command, or another child command|`cy.get("[data-cy=speakerProfile]").click();`<br/>`ci.get("[data-cy=sessionTitle]").type("My new session");`<br/>`cy.get(".conference").find("footer");`<br/>`cy.contains("ul", "room number").should("be.visible");`<br/>`cy.get("footer").scrollIntoView();`<br/>`cy.get("form").submit();`|
+
+---
+
+## Dual Commands
+|n|name|desc.|e.g.|O/P|
+|-|----|-----|----|---|
+|1||Can either start a chain or be chained off an existing one|`cy.contains()`<br/>`cy.screenshot()`<br/>`cy.wait()`|
