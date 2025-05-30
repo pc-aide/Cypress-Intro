@@ -1,0 +1,8 @@
+# Folders
+
+---
+
+## List
+|n|name|desc.|e.g.|O/P|
+|-|----|-----|----|---|
+|1|fixtures|<ins>It's used to store data</ins><br/>1. Reusable parameters<br/>2. Separating data from code – a best practice<br/>3. Read `.json` file with `cy.fixture()`|
