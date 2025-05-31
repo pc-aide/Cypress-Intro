@@ -13,3 +13,6 @@
 |7|describe|Group together||<img src="https://i.imgur.com/CDVdA9L.png">|
 |8|Test Runner|
 |9|Mocha|underlying test framework|
+|10|Object Locators|
+|11|Assertions|
+|12|Page Object Model|
