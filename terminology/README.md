@@ -16,3 +16,4 @@
 |10|Object Locators|
 |11|Assertions|
 |12|Page Object Model|
+|13|Cypress Studio|Record your commands|cypress.json<br/>|
