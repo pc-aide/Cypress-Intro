@@ -5,7 +5,7 @@
 ## List
 |n|name|desc.|e.g.|O/P|
 |-|----|-----|----|---|
-|1|visit||`cy.visit('https://google.com/)`|
+|1|visit||`cy.visit('https://google.com/')`|
 |2|get||`cy.get('.class')`|
 |3|type||`cy.get('.class').type('1234')`|
 |4|click||`cy.get('.class').click()`|
