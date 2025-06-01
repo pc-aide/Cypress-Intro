@@ -16,4 +16,4 @@
 |10|Object Locators|
 |11|Assertions|
 |12|Page Object Model|
-|13|Cypress Studio|Record your commands|cypress.config.js<br/>&ensp;experimentalStudio: true<br/>`const { defineConfig } = require("cypress");`<br/>` `<br/>`module.exports = defineConfig({`<br/>`  e2e: {`<br/>`    setupNodeEvents(on, config) {`<br/>`      // implement node event listeners here`<br/>`    },`<br/>`  },`<br/>`  experimentalStudio: true,`<br/>`});`|
+|13|Cypress Studio|Record your commands|cypress.config.js<br/>&ensp;experimentalStudio: true<br/>`const { defineConfig } = require("cypress");`<br/>` `<br/>`module.exports = defineConfig({`<br/>`  e2e: {`<br/>`    setupNodeEvents(on, config) {`<br/>`      // implement node event listeners here`<br/>`    },`<br/>`  },`<br/>`  experimentalStudio: true,`<br/>`});`|add cypress studio<br/><img src="https://i.imgur.com/eBgD0lU.png"><br/>|
