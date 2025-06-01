@@ -7,9 +7,10 @@
 |-|----|-----|----|---|
 |1|visit||`cy.visit('https://google.com/')`|
 |2|get||`cy.get('.class')`|find out the class from the DOM<br/><img src="https://i.imgur.com/54rimkh.png">|
-|3|type||`cy.get('.class').type('1234')`<br/><br/>`// Timeout : value in miliseconds`<br/>`cy.get('.className', {timeout:5000}).type('Automation Step by Step{enter}')`|
+|3|type||`cy.get('.class').type('1234')`<br/><br/>`// Timeout : value in milliseconds`<br/>`cy.get('.className', {timeout:5000}).type('Automation Step by Step{enter}')`|
 |4|click||`cy.get('.class').click()`|
 |5|contains||`cy.contains('Google Search').click()`|
+|6|wait|milliseconds|`cywait(2000)`|<img src="https://i.imgur.com/T4CU4uw.png">|
 
 ---
 
