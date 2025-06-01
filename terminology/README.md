@@ -11,7 +11,7 @@
 |5|Commands Cypress||`cy.visit("URL")`<br/><br/>`cy.get("h1").contains("View Sessions").click();`<br/><br/>`cy.url().should("include", "/sessions");`|
 |6|Hooks||`before(() => {`<br/>`  // root-level hook`<br/>`  // runs once before all tests`<br/>`});`<br/><br/>`beforeEach(() => {`<br/>`  // root-level hook`<br/>`  // runs before every test block`<br/>`});`<br/><br/>`afterEach(() => {`<br/>`  // runs after each test block`<br/>`});`<br/><br/>`after(() => {`<br/>`  // runs once all tests are done`<br/>`});`|
 |7|describe|Group together||<img src="https://i.imgur.com/CDVdA9L.png">|
-|8|Test Runner|
+|8|Test Runner|<ins>Components of the Test Runner</ins><br/>1. Test Status Menu<br/>2. Command Log<br/>3. Url Preview<br/>4. Viewport Sizing<br/>5. App preview||<img src="https://i.imgur.com/YHWIFQ9.png">|
 |9|Mocha|underlying test framework|
 |10|Object Locators|
 |11|Assertions|
