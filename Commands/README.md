@@ -9,6 +9,7 @@
 |2|get||`cy.get('.class')`|
 |3|type||`cy.get('.class').type('1234')`|
 |4|click||`cy.get('.class').click()`|
+|5|contains||`cy.contains('Google Search').click()`|
 
 ---
 
