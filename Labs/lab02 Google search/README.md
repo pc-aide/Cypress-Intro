@@ -12,3 +12,4 @@
 ---
 
 ## Answer
+<details><summary>Answer</summary>True</details>
