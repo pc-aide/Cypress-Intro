@@ -14,8 +14,8 @@
 ````
 
 ````powershell
-$env:BROWSERSTACK_USERNAME = "ton_username"
-$env:BROWSERSTACK_ACCESS_KEY = "ta_cle"
+$env:BROWSERSTACK_USERNAME = "username"
+$env:BROWSERSTACK_ACCESS_KEY = "key"
 ````
 
 npx browserstack-cypress run
