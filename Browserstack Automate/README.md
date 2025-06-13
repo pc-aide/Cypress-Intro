@@ -15,7 +15,7 @@
 
 ````powershell
 $env:BROWSERSTACK_USERNAME = "username"
-$env:BROWSERSTACK_ACCESS_KEY = Read-Host "Entrez votre access_key" -AsSecureString
+$env:BROWSERSTACK_ACCESS_KEY = Read-Host "your key" -AsSecureString
 ````
 
 npx browserstack-cypress run
