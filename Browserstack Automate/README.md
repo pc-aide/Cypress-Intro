@@ -79,3 +79,5 @@ $env:BROWSERSTACK_ACCESS_KEY = Read-Host "your key"
 <img src="https://i.imgur.com/6j8cSDp.png">
 3. windows 11 & edge - no err
 <img src="https://i.imgur.com/VQB4Y3Q.png">
+passed<br/>
+<img src="https://i.imgur.com/Fu7Fi4s.png">
