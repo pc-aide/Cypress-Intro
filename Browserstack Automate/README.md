@@ -54,4 +54,7 @@ $env:BROWSERSTACK_ACCESS_KEY = Read-Host "your key"
 3. a build-name
 <img src="https://i.imgur.com/3zed261.png">
 
+4. reporting in terminal to automate upload
+<img src="https://i.imgur.com/f9ctXEA.png">
+
 
