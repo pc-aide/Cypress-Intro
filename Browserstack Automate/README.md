@@ -13,7 +13,13 @@
 }
 ````
 
-2. exclude - run_settings
+2. cypress_config_file - run_settings
+````js
+run_settings": {
+        "cypress_config_file": "cypress.config.js",
+````
+
+3. exclude - run_settings
 ````js
  "run_settings": {
         "cypress_config_file": "cypress.config.js",
@@ -28,7 +34,7 @@
     },
 ````
 
-3. local true - connection_settings
+4. local true - connection_settings
 ````js
 "connection_settings": {
         "__comment": "why in Automate - i see local off - maybe my trial here ?"
