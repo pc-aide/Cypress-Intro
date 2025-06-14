@@ -69,3 +69,5 @@ $env:BROWSERSTACK_ACCESS_KEY = Read-Host "your key"
 <img src="https://i.imgur.com/xlD0kZv.png">
 1. firefox
 <img src="https://i.imgur.com/4Gfuroh.png">
+2. edge
+<img src="https://i.imgur.com/6j8cSDp.png">
