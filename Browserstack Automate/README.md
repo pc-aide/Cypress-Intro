@@ -67,4 +67,5 @@ $env:BROWSERSTACK_ACCESS_KEY = Read-Host "your key"
 
 ## log/build_results.txt
 <img src="https://i.imgur.com/xlD0kZv.png">
-
+1. firefox
+<img src="https://i.imgur.com/4Gfuroh.png">
