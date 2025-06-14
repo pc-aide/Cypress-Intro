@@ -81,3 +81,5 @@ $env:BROWSERSTACK_ACCESS_KEY = Read-Host "your key"
 <img src="https://i.imgur.com/VQB4Y3Q.png">
 passed<br/>
 <img src="https://i.imgur.com/Fu7Fi4s.png">
+4. maybe missing local to get a Local ON ?
+<img src="https://i.imgur.com/kbv0cHG.png">
