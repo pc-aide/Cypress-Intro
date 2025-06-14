@@ -2,7 +2,14 @@
 
 ---
 
-## 
+---
+
+## browserstack confi
+````powershell
+# tpl - browserstack.json
+browserstack-cypress init
+````
+
 1. auth - browserstack.json
 ````js
 {
