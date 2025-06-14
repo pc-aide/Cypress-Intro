@@ -4,7 +4,7 @@
 
 ---
 
-## browserstack confi
+## browserstack cfg
 ````powershell
 # tpl - browserstack.json
 browserstack-cypress init
