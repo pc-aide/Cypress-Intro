@@ -20,7 +20,7 @@ $env:BROWSERSTACK_ACCESS_KEY = Read-Host "your key"
 ````
 
 ## deploy to Automate
-1. `deploy to Automate`<br/>`npx browserstack-cypress run`
+1. `# deploy to Automate`<br/>`npx browserstack-cypress run`
 2. [Projects](https://observability.browserstack.com/projects)
 
 <img src="https://i.imgur.com/W1rppQD.png">
