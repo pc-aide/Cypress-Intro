@@ -18,4 +18,9 @@ $env:BROWSERSTACK_USERNAME = "username"
 $env:BROWSERSTACK_ACCESS_KEY = Read-Host "your key" -AsSecureString
 ````
 
-npx browserstack-cypress run
+## deploy to Automate
+1. https://observability.browserstack.com/projects
+
+<img src="https://i.imgur.com/W1rppQD.png">
+
+`npx browserstack-cypress run`
