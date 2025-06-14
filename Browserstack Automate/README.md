@@ -3,7 +3,7 @@
 ---
 
 ## 
-1. atuh - browserstack.json
+1. auth - browserstack.json
 ````js
 {
     "auth": {
