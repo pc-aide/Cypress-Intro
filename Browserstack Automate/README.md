@@ -13,6 +13,21 @@
 }
 ````
 
+2. exclude - run_settings
+````js
+ "run_settings": {
+        "cypress_config_file": "cypress.config.js",
+        "project_name": "demo project",
+        "build_name": "build-demo",
+        "__comment": "In the exclude section, there's no need to include folders like: node_modules/ The automation automatically selects what it needs for simulation. Therefore, leaving it empty has no impact.",
+        "exclude": [],
+        "parallels": "1",
+        "npm_dependencies": {},
+        "package_config_options": {},
+        "headless": true
+    },
+````
+
 ````powershell
 $env:BROWSERSTACK_USERNAME = "username"
 # -AsSecureString - browserstack cli can't read object secu like that
