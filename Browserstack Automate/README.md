@@ -31,7 +31,7 @@
 3. local true - connection_settings
 ````js
 "connection_settings": {
-        "__comment": "why in autoamte - i see local off - maybe my trial here ?"
+        "__comment": "why in Automate - i see local off - maybe my trial here ?"
         "local": true,
         "local_identifier": null,
         "local_mode": null,
