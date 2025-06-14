@@ -28,6 +28,20 @@
     },
 ````
 
+3. local - cnnection_settings
+````js
+"connection_settings": {
+        "__comment": "why in autoamte - i see local off - maybe my trial here ?"
+        "local": true,
+        "local_identifier": null,
+        "local_mode": null,
+        "local_config_file": null
+    },
+````
+<img src="https://i.imgur.com/cweNgmy.png">
+
+---
+
 ````powershell
 $env:BROWSERSTACK_USERNAME = "username"
 # -AsSecureString - browserstack cli can't read object secu like that
@@ -48,4 +62,5 @@ $env:BROWSERSTACK_ACCESS_KEY = Read-Host "your key"
 
 5. info about your build with video
 <img src="https://i.imgur.com/mj8yJQQ.png">
+
 
