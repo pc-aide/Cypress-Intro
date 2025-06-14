@@ -63,4 +63,8 @@ $env:BROWSERSTACK_ACCESS_KEY = Read-Host "your key"
 5. info about your build with video
 <img src="https://i.imgur.com/mj8yJQQ.png">
 
+---
+
+## log/build_results.txt
+<img src="https://i.imgur.com/xlD0kZv.png">
 
