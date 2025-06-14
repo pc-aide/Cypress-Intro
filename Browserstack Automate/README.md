@@ -41,7 +41,8 @@
 
 ````powershell
 $env:BROWSERSTACK_USERNAME = "username"
-$env:BROWSERSTACK_ACCESS_KEY = Read-Host "your key" -AsSecureString
+# -AsSecureString - browserstack cli can't read object secu like that
+$env:BROWSERSTACK_ACCESS_KEY = Read-Host "your key" 
 ````
 
 ## deploy to Automate
