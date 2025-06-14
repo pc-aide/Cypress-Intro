@@ -28,7 +28,7 @@
     },
 ````
 
-3. local - cnnection_settings
+3. local true - connection_settings
 ````js
 "connection_settings": {
         "__comment": "why in autoamte - i see local off - maybe my trial here ?"
