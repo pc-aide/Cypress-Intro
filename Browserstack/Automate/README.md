@@ -2,6 +2,10 @@
 
 ---
 
+## URL
+https://automate.browserstack.com/qig/framework
+<img src="https://i.imgur.com/sO9Jjks.png">
+
 ---
 
 ## browserstack cfg
