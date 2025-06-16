@@ -65,8 +65,16 @@ run_settings": {
 ---
 
 ````bash
+# tmp
 export BROWSERSTACK_USERNAME="username"
 export BROWSERSTACK_ACCESS_KEY="access_key"
+
+# persistant
+echo 'export BROWSERSTACK_USERNAME="username"' >> ~/.bashrc
+echo 'export BROWSERSTACK_ACCESS_KEY="access_key"' >> ~/.bashrc
+
+# reload bash
+source ~/.bashrc
 ````
 
 ````powershell
