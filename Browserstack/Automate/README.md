@@ -9,7 +9,7 @@ https://automate.browserstack.com/qig/framework
 ---
 
 ## Install
-1. ``
+1. `npm install -g browserstack-cypress-cli`
 
 ---
 
