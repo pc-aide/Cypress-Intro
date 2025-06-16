@@ -8,6 +8,11 @@ https://automate.browserstack.com/qig/framework
 
 ---
 
+## Install
+1. ``
+
+---
+
 ## browserstack cfg
 ````powershell
 # tpl - browserstack.json
@@ -58,6 +63,11 @@ run_settings": {
 <img src="https://i.imgur.com/cweNgmy.png">
 
 ---
+
+````bash
+export BROWSERSTACK_USERNAME="username"
+export BROWSERSTACK_ACCESS_KEY="access_key"
+````
 
 ````powershell
 $env:BROWSERSTACK_USERNAME = "username"
