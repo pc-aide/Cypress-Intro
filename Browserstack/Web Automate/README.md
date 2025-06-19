@@ -1,4 +1,4 @@
-# Browserstack Automate
+# Web Automate
 
 ---
 
