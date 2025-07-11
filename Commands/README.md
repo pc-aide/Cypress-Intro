@@ -32,3 +32,16 @@
 |n|name|desc.|e.g.|O/P|
 |-|----|-----|----|---|
 |1||Can either start a chain or be chained off an existing one|`cy.contains()`<br/>`cy.screenshot()`<br/>`cy.wait()`|
+
+---
+
+## Assert
+### Implicit 
+|n|name|desc.|e.g.|O/P|
+|-|----|-----|----|---|
+|1|
+
+### Explicit
+|n|name|desc.|e.g.|O/P|
+|-|----|-----|----|---|
+|1
