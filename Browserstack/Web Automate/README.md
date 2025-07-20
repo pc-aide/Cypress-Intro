@@ -11,6 +11,8 @@ https://automate.browserstack.com/qig/framework
 ## Proxy & CERT
 ````powershell
 # optional
+HTTP_PROXY = ""
+HTTPS_PROXY = ""
 
 ````
 
