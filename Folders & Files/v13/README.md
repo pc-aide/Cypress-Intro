@@ -47,5 +47,8 @@ module.exports = defineConfig({
 
   // Global default command timeout
   defaultCommandTimeout: 8000,
+
+  // Enable the Cypress Studio feature for recording actions and assertions
+  experimentalStudio: true,
 });
 ````
