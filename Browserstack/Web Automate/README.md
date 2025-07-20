@@ -8,8 +8,18 @@ https://automate.browserstack.com/qig/framework
 
 ---
 
+## Proxy & CERT
+````powershell
+# optional
+
+````
+
+---
+
 ## Install
-1. `npm install -g browserstack-cypress-cli`
+````powershell
+npm install -g browserstack-cypress-cli
+````
 
 ---
 
