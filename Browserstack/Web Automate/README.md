@@ -10,10 +10,10 @@ https://automate.browserstack.com/qig/framework
 
 ## Proxy & CERT
 ````powershell
-# optional
-HTTP_PROXY = ""
-HTTPS_PROXY = ""
-
+# Optional
+$env:HTTP_PROXY = "http://127.0.0.1:9080"
+$env:HTTPS_PROXY = "http://127.0.0.1:9080"
+$env:NODE_EXTRA_CA_CERTS = "c:\cert\forti.cer"
 ````
 
 ---
