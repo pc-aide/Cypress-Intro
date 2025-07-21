@@ -17,7 +17,7 @@ module.exports = defineConfig({
     // Support file for global configuration and hooks
     supportFile: 'cypress/support/e2e.js',
 
-    // Timeout for each Cypress command
+    // Timeout (milliSeconds) for each Cypress command
     defaultCommandTimeout: 8000,
 
     // Timeout for network requests
