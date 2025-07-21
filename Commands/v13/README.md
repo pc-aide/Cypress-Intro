@@ -2,11 +2,11 @@
 
 ---
 
-## Assert explicit
+## Assert implicit
 |n|name|dsc|e.g.|O/P|
 |-|----|---|----|---|
 |1|url||`cy.url().should('include','/sessions');`|
 
 ---
 
-## Assert implicit
+## Assert explicit
