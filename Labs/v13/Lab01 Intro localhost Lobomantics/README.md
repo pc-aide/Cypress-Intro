@@ -8,7 +8,7 @@
 3. idem for api
 4. install cypress
 5. cypress open
-7. Create e2e folder from Cypress folder 
+7. Create e2e folder from Cypress folder<br/> 
     7.1 Create the file `test_nav.cy.js`<br/>
     7.2 Add describe fonction with title, Navigation<br/>
     7.3 Visit /conference as a URL<br/>
