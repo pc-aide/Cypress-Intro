@@ -8,3 +8,4 @@
 |npm|node package manager|
 |ISC|Internet Software Consortium|
 |E2E|End to End|
+|DOM|Document Object Model|
