@@ -17,4 +17,4 @@
 ## cy.get(selector)
 |n|name|dsc|e.g.|O/P|
 |-|----|---|----|---|
-|1|<ins>Selector CSS\eg:</ins><br/>1. jQuery||`cy.get('#inputTitle').type('New session title');`|<img src="https://i.imgur.com/zwu4XLQ.png">|
+|1|<ins>Selector CSS\eg:</ins><br/>1. jQuery||`cy.get('#inputTitle').type('New session title');`<br/>avoid wait fix:<br/>`cy.get().should('be.visible')`|<img src="https://i.imgur.com/zwu4XLQ.png">|
