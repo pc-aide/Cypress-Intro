@@ -9,7 +9,7 @@
 4. install cypress
 5. cypress open
 7. Create e2e folder from Cypress folder 
-    7.1 Create the file `test_nav.cy.js`
+    7.1 Create the file `test_nav.cy.js`<br/>
     7.2 Add describe fonction with title, Navigation<br/>
     7.3 Visit /conference as a URL<br/>
     7.4 simulate click on 'View Sessions'<br/><img src="https://i.imgur.com/V3dqgE6.png"><br/>
