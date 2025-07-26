@@ -5,4 +5,4 @@
 ## List
 |n|name|desc|eg|O/P|
 |-|----|----|--|---|
-|1|Selectors|<ins>Cypress wil auto calculate a unique selector to use **targeted element**</ins><br/>1. data-cy, data-test, data-tesid<br/>2. id, class,tag,attributes,nth-child|
+|1|Selectors|<ins>Cypress wil auto calculate a unique selector to use **targeted element**</ins><br/>1. data-cy, data-test, data-tesid<br/>2. id, class,tag,attributes,nth-child<br/><br/><ins>Best selectors to try first</ins><br/>1. `data-*`<br/>Why :<br/>&ensp;a. Stable - not affected by CSS or loading visuals<br/>&ensp;b. independent of DOM - not `.parent .child:nth-child(2)`<br/>Officially recommended by Cypress<br/><br/>2. `id`|`data-cy="username-input"`<br/>`data-test="submit-btn"`<br/><br/>``|
