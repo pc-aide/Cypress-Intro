@@ -6,7 +6,7 @@
 1. Clone https://github.com/adhithiravi/Cypress-Fundamentals
 2. install app & start from the folder, Cypress-Fundamentals
 3. idem for api
-4. install cypress
+4. install cypress v13
 5. cypress open
 7. Create e2e folder from Cypress folder<br/> 
     7.1 Create the file `test_nav.cy.js`<br/>
