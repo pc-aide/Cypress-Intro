@@ -18,3 +18,4 @@
 ---
 
 ## Answer
+<details><summary>Answer</summary><img src="https://i.imgur.com/4vvvPHA.png"></details>
