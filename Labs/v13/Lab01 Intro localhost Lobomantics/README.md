@@ -18,4 +18,4 @@
 ---
 
 ## Answer
-<details><summary>Answer</summary><img src="https://i.imgur.com/4vvvPHA.png"></details>
+<details><summary>Answer</summary><img src="https://i.imgur.com/4vvvPHA.png"><br/><ins>click on view session</ins><br/>cy.get('h1').contains('View Sessions').click();</details>
