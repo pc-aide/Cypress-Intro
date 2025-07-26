@@ -23,4 +23,4 @@
 ---
 
 ## Answer
-<details><summary>Answer</summary>True</details>
+<details><summary>Answer</summary><img src="https://i.imgur.com/WvCfsPo.png"></details>
