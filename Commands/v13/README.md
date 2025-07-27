@@ -28,6 +28,11 @@
 |-|----|---|----|---|
 |1|||`cy.get('[data-testid="loading"]').should('not.be.visible')`
 
+### Multiple assertions
+|n|name|desc|e.g.|O/P|
+|-|----|---|----|---|
+|1|||// ⛔️ DOES NOT WORK<br/>`cy.get('[data-testid="loading"]').should('be.visible').and('not.be.visible')`<br/><br/>// ✅ THE CORRECT WAY<br/>`cy.get('[data-testid="loading"]').should('be.visible')`<br/>`cy.get('[data-testid="loading"]').should('not.be.visible')`
+
 ---
 
 ## Assert explicit
