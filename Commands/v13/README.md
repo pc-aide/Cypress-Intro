@@ -50,3 +50,10 @@
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
 |1|click()|avoid `.submit()`:<br/>bypass click btn from std user e2e|`cy.get('form').submit();`<br/><br/>best choice to e2e:<br/>`cy.get('.btn').click();`|
+
+--
+
+## Intercept
+|n|name|desc|e.g.|O/P|
+|-|----|---|----|---|
+|1|cy.intercept()|Spying & stubbing<br/>backend with `cy.intercept()`|
