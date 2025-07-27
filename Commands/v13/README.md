@@ -2,6 +2,11 @@
 
 ---
 
+## doc
+[assertions](https://docs.cypress.io/app/references/assertions)
+
+---
+
 ## Assert implicit
 |n|name|dsc|e.g.|O/P|
 |-|----|---|----|---|
