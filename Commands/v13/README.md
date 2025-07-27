@@ -56,4 +56,4 @@
 ## Intercept
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
-|1|cy.intercept()|**Spying** & stubbing<br/>backend with `cy.intercept()`|
+|1|cy.intercept()|**Spying** & stubbing<br/>backend with `cy.intercept()`|`cy.intercept(`<br/>`  {`<br/>`    method: 'GET',        // Intercept all HTTP GET requests`<br/>`    url: '/users/*',      // Match any URL that starts with /users/`<br/>`  },`<br/>`  []                       // Force the response to be an empty array`<br/>`).as('getUsers')           // Assign an alias to this intercept`|
