@@ -16,7 +16,7 @@
 ### Visibility
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
-|1|||// retry until the element with <br>// data-testid "form-submit" is visible <br>`cy.get('[data-testid="form-submit"]').should('be.visible')`<br/><br/>// retry until the list item with<br/>// text "write tests" is visible<br/>`cy.contains('[data-testid="todo"] li', 'write tests').should('be.visible')`|
+|1|||// retry until the element with <br>// data-testid "form-submit" is visible <br>`cy.get('[data-testid="form-submit"]').should('be.visible')`<br/><br/>// retry until the list item with<br/>// text "write tests" is visible<br/>`cy.contains('[data-testid="todo"] li', 'write tests').should('be.visible')`<br/><br/>// retry until EVERY element is invisible<br/>`cy.get('li.hidden').should('not.be.visible')`|
 
 ---
 
