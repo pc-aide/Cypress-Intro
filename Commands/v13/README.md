@@ -56,4 +56,4 @@
 ## Intercept
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
-|1|cy.intercept()|Spying & stubbing<br/>backend with `cy.intercept()`|
+|1|cy.intercept()|**Spying** & stubbing<br/>backend with `cy.intercept()`|
