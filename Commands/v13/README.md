@@ -63,4 +63,4 @@
 ## Custom command
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
-|1|||`Cypress.Commands.add('clickViewSessions', () => {`<br/>`  cy.visit('/conference');`<br/>`  cy.get('h1').contains('View Sessions').click();`<br/>`});`|
+|1|||`Cypress.Commands.add('clickViewSessions', () => {`<br/>`  cy.visit('/conference');`<br/>`  cy.get('h1').contains('View Sessions').click();`<br/>`});`|<img src="https://i.imgur.com/YtDv6db.png">|
