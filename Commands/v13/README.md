@@ -57,3 +57,10 @@
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
 |1|cy.intercept()|**Spying** & stubbing<br/>backend with `cy.intercept()`|`cy.intercept(`<br/>`  {`<br/>`    method: 'GET',        // Intercept all HTTP GET requests`<br/>`    url: '/users/*',      // Match any URL that starts with /users/`<br/>`  },`<br/>`  []                       // Force the response to be an empty array`<br/>`).as('getUsers')           // Assign an alias to this intercept`<br/><br/>`// we set the response to be the activities.json fixture`<br/>`cy.intercept('GET', '/activities/*', { fixture: 'activities.json' })`<br/><br/><ins>Waiting</ins><br/>`// Intercept the GET request to /activities/* and respond with the activities fixture`<br/>`cy.intercept("/activities/*", { fixture: "activities" }).as("getActivities");`<br/>` `<br/>`// Intercept the GET request to /messages/* and respond with the messages fixture`<br/>`cy.intercept("/messages/*", { fixture: "messages" }).as("getMessages");`<br/>` `<br/>`// Visit the dashboard page, which will trigger requests to /activities/* and /messages/*`<br/>`cy.visit("http://localhost:8888/dashboard");`<br/>` `<br/>`// Wait for both intercepted routes to complete before moving on`<br/>`cy.wait(["@getActivities", "@getMessages"]);`<br/>` `<br/>`// Now assert that the page contains an <h1> with the text "Dashboard"`<br/>`cy.get("h1").should("contain", "Dashboard");`|
+
+---
+
+## Custom command
+|n|name|desc|e.g.|O/P|
+|-|----|---|----|---|
+|1|||`Cypress.Commands.add('clickViewSessions', () => {`<br/>`  cy.visit('/conference');`<br/>`  cy.get('h1').contains('View Sessions').click();`<br/>`});`|
