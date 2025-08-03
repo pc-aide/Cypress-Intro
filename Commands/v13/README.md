@@ -7,6 +7,13 @@
 
 ---
 
+## debug
+|n|name|desc|e.g.|O/P|
+|-|----|---|----|---|
+|1|pause||`cy.visit('http://localhost:4200/shipping').pause();`|<img src="https://i.imgur.com/vT3YAui.png">|
+
+---
+
 ## Assert implicit
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
