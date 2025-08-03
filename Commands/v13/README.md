@@ -14,6 +14,13 @@
 
 ---
 
+## type
+|n|name|desc|e.g.|O/P|
+|-|----|---|----|---|
+|1|type||`blur()` skip the focus on the field, like a tab key <br/>`cy.get('#phone').type(faker.phone.number()).blur();`|
+
+---
+
 ## Assert implicit
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
