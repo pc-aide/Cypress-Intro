@@ -5,6 +5,8 @@
 
 ## diagramme
 <img src="https://i.imgur.com/LZZ8ofz.png">
+1. Host1\SRV
+2. Host2\Cypress
 
 ---
 
