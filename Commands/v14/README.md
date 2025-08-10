@@ -5,7 +5,7 @@
 ## Variables
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
-|1|Array|
+|1|Array||`let products: HTMLElement[] = [];`|
 
 ---
 
