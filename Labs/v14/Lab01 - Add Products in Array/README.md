@@ -13,6 +13,7 @@
 
 ## Goal
 1. You must simulate a Cypress test that connects to the server, not to localhost.
+<img src="https://i.imgur.com/Ke8Os9T.png">
 
 ---
 
