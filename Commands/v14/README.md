@@ -2,6 +2,13 @@
 
 ---
 
+## Variables
+|n|name|desc|e.g.|O/P|
+|-|----|---|----|---|
+|1|Array|
+
+---
+
 ## viewport
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
