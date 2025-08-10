@@ -5,4 +5,4 @@
 ## viewport
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
-|1|<ins>default:</ins><br/>1000x660|||<img src="https://i.imgur.com/tJc9ria.png">|
+|1|<ins>default:</ins><br/>1000x660||<ins>cypress cfg:</ins><br/>`import { defineConfig } from "cypress";`<br/>` `<br/>`export default defineConfig({`<br/>`  viewportHeight: 1380,`<br/>`  viewportWidth: 1220,`<br/>`  e2e: {`<br/>`  },`<br/>`});`|<img src="https://i.imgur.com/tJc9ria.png">|
