@@ -4,7 +4,7 @@ v14
 
 ## FORCE_FIREFOX_CDP
 ````ps1
-# irefox v135+ with WebDriver BiDi
+# firefox v135+ with WebDriver BiDi
 $env:FORCE_FIREFOX_CDP="1"
 npx cypress open --browser firefox
 ````
