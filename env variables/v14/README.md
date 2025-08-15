@@ -2,6 +2,11 @@
 
 ---
 
+## doc
+* https://docs.cypress.io/app/references/environment-variables
+
+---
+
 ## FORCE_FIREFOX_CDP
 ````ps1
 # firefox v135+ with WebDriver BiDi
