@@ -4,6 +4,7 @@
 
 ## doc
 * https://docs.cypress.io/app/references/environment-variables
+* https://www.cypress.io/blog/announcing-cypress-support-for-firefox-over-webdriver-bidi
 
 ---
 
