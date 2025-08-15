@@ -2,13 +2,14 @@ v14
 
 ---
 
-## firefox v135+ with WebDriver BiDi
+## FORCE_FIREFOX_CDP
 ````ps1
+# irefox v135+ with WebDriver BiDi
 $env:FORCE_FIREFOX_CDP="1"
 npx cypress open --browser firefox
 ````
 
-## checkUp
+### checkUp
 ````js
 // cypress/e2e/check-env.cy.js
 describe('Check FORCE_FIREFOX_CDP', () => {
@@ -18,4 +19,11 @@ describe('Check FORCE_FIREFOX_CDP', () => {
 });
 ````
 
-## O/P
+### O/P
+
+---
+
+## debug
+````ps1
+$env:DEBUG="cypress:launcher"; $env:FORCE_FIREFOX_CDP="1"; npx cypress open --browser firefox
+````
