@@ -5,7 +5,7 @@
 ## debugger
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
-|1||
+|1||||<img src="https://i.imgur.com/oYoG96M.png">|
 
 ---
 
