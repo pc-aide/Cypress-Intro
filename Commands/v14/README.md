@@ -2,6 +2,13 @@
 
 ---
 
+## Retries
+|n|name|desc|e.g.|O/P|
+|-|----|---|----|---|
+|1||||<img src="https://i.imgur.com/ZjSuHCy.png">
+
+---
+
 ## debugger
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
