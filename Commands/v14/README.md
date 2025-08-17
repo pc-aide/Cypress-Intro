@@ -2,10 +2,17 @@
 
 ---
 
+## debugger
+|n|name|desc|e.g.|O/P|
+|-|----|---|----|---|
+|1||
+
+---
+
 ## Variables
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
-|1|Array||`let products: HTMLElement[] = [];`|<img src="https://i.imgur.com/sJQWrrv.png">|
+|1|Array||`let products = [];`|<img src="https://i.imgur.com/sJQWrrv.png">|
 
 ---
 
