@@ -2,6 +2,13 @@
 
 ---
 
+## get
+|n|name|desc|e.g.|O/P|
+|-|----|---|----|---|
+|1|||`// Go to the cart`<br/>`cy.get('a[href="/cart"]').click();`|<img src="https://i.imgur.com/Xynap9b.png">|
+
+---
+
 ## Retries
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
