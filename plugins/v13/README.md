@@ -38,7 +38,7 @@ npm i mocha-junit-reporter --save-dev
 
 ---
 
-## 
+## cypress-log-to-output
 ```shell
 # install
 npm i cypress-log-to-output
