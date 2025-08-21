@@ -70,3 +70,40 @@ cy:log Login test finished
 ````shell
 npx cypress run > logs.txt
 ````
+
+---
+
+## cypress-terminal-report
+````shell
+# install
+npm cypress-terminal-report
+````
+
+* cypress.config.js
+````js
+const { install, printLogsToFile } = require('cypress-terminal-report');
+
+module.exports = {
+  e2e: {
+    setupNodeEvents(on, config) {
+      install(on, config);
+      printLogsToFile(on, config);  // permet d’écrire dans un fichier
+      return config;
+    }
+  }
+};
+````
+
+* eg
+````js
+2025-08-21 19:10:15 [spec.cy.js] Running test: "Login works"
+    cy.visit("http://localhost:3000/")
+    cy.get("input[name=username]")
+    cy.type("admin")
+    cy.get("input[name=password]")
+    cy.type("1234")
+    cy.click("button[type=submit]")
+    cy.log("User logged in successfully")   <-- ton cy.log apparait ici
+````
+
+* O/P
