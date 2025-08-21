@@ -52,3 +52,20 @@ module.exports = defineConfig({
   experimentalStudio: true,
 });
 ````
+
+---
+
+## retries
+````js
+import { defineConfig } from "cypress";
+
+export default defineConfig({
+  e2e: {
+    // defaultCommandTimeout: 10000
+    retries: {
+      runMode: 2,
+      openMode: 2,
+    },
+  },
+});
+````
