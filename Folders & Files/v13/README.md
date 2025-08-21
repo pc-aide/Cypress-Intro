@@ -63,7 +63,9 @@ export default defineConfig({
   e2e: {
     // defaultCommandTimeout: 10000
     retries: {
+      // cypress run : runMode
       runMode: 2,
+      // cypress open : openMode
       openMode: 2,
     },
   },
