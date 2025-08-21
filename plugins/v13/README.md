@@ -16,5 +16,5 @@ npm i cypress-split
 
 ## mocha-junit-reporter
 ````shell
-npm install mocha-junit-reporter --save-dev
+npm i mocha-junit-reporter --save-dev
 ````
