@@ -35,3 +35,38 @@ export default defineConfig({
 # install
 npm i mocha-junit-reporter --save-dev
 ````
+
+---
+
+## 
+```shell
+# install
+npm i cypress-log-to-output
+````
+
+* eg test
+````js
+it('test login', () => {
+  cy.log("Start login process");
+  cy.visit("/login");
+  cy.get("#username").type("admin");
+  cy.log("Entered username");
+  cy.get("#password").type("1234");
+  cy.log("Entered password");
+  cy.get("button[type=submit]").click();
+  cy.log("Login test finished");
+});
+````
+
+* console
+````shell
+cy:log Start login process
+cy:log Entered username
+cy:log Entered password
+cy:log Login test finished
+````
+
+* O/P
+````shell
+npx cypress run > logs.txt
+````
