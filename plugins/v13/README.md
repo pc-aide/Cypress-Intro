@@ -4,6 +4,7 @@
 
 ## doc
 * https://docs.cypress.io/app/plugins/plugins-list
+* https://www.npmjs.com/package/concurrently
 
 ---
 
