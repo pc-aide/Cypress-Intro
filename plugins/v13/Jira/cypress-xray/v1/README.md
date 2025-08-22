@@ -5,6 +5,7 @@
 ## doc
 * https://www.npmjs.com/package/cypress-xray-plugin
 * [Authentication - cypress xray plugin](https://qytera-gmbh.github.io/projects/cypress-xray-plugin/section/configuration/authentication/)
+* [Jira - cypress xray plugin](https://qytera-gmbh.github.io/projects/cypress-xray-plugin/section/configuration/jira/#summary_1)
 
 ---
 
