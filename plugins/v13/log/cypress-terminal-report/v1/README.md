@@ -2,6 +2,11 @@
 
 ---
 
+## doc
+* https://www.npmjs.com/package/cypress-terminal-report#optionsprintlogstoconsole
+
+---
+
 ## install
 ````shell
 npm i cypress-terminal-report
