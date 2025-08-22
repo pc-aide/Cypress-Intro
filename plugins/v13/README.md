@@ -13,18 +13,34 @@
 # install
 npm i cypress-split
 ````
+* support/e2e/js
+````js
+// Import cypress-terminal-report support
+require('cypress-terminal-report/src/installLogsCollector')();
+````
 * cypress.config.js
 ````js
-import { defineConfig } from "cypress";
-import * as cypressSplit from "cypress-split";
+const { defineConfig } = require("cypress");
+const installLogsPrinter = require('cypress-terminal-report/src/installLogsPrinter');
 
-export default defineConfig({
+module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      cypressSplit(on, config);
+      // Configuration du plugin cypress-terminal-report
+      installLogsPrinter(on, {
+        printLogsToConsole: "always",
+        printLogsToFile: "always",
+        outputRoot: config.projectRoot + '/',
+        outputTarget: {
+          'cypress_test.json': 'json',
+        },
+        // Options pour maximiser les détails dans le JSON
+        includeSuccessfulHookLogs: true,
+        logToFilesOnAfterRun: true
+      });
       return config;
-    }
-  },
+    },
+  }
 });
 ````
 
