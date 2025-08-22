@@ -30,3 +30,8 @@ export default defineConfig({
     },
 });
 ````
+
+## Test
+````shell
+npx cypress run --env JIRA_API_TOKEN="XYZ"
+````
