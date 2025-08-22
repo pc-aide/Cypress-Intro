@@ -15,6 +15,7 @@ npm i cypress-xray-plugin
 ````
 
 ## cypress.config.js
+* default :
 ````js
 import { configureXrayPlugin } from "cypress-xray-plugin";
 
@@ -30,6 +31,29 @@ export default defineConfig({
         },
     },
 });
+````
+
+* Jira-fields : cypress.config.js
+````js
+await configureXrayPlugin(on, config, {
+    jira: {
+        testExecutionIssue: {
+            key: "PRJ-16",
+            fields: {
+                summary: "My execution issue summary",
+                description: "My execution issue description",
+                assignee: {
+                    name: "cool.turtle@company.com"
+                },
+                customfield_12345: "Sprint 17"
+            }
+        }
+    },
+});
+````
+* env var
+````shell
+npx cypress run --env JIRA_TEST_EXECUTION_ISSUE='{"key":"PRJ-16","fields":{"summary":"My execution issue summary","description":"My execution issue description","assignee":{"name":"cool.turtle@company.com"},"customfield_12345":"Sprint 17"}}'
 ````
 
 ## Test
