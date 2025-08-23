@@ -94,7 +94,7 @@
 ## Hooks
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
-|1|before||`beforeEach(() => {`<br/>`    // Code to run once before all tests`<br/>`});`|
+|1|before|Cleaning up before Test|`beforeEach(() => {`<br/>`    // Code to run once before all tests`<br/>`});`||
 |2|beforeEach||`beforeEach(() => {`<br/>`    // Code to run before each test`<br/>`});`|
 |3|afterEach||`afterEach(() => {`<br/>`    // Code to run after each test`<br/>`});`|
 |4|after||`after(() => {`<br/>`    // Code to run once after all tests`<br/>`});`|
