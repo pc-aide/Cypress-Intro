@@ -88,3 +88,13 @@
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
 |1|||`Cypress.Commands.add('clickViewSessions', () => {`<br/>`  cy.visit('/conference');`<br/>`  cy.get('h1').contains('View Sessions').click();`<br/>`});`|<img src="https://i.imgur.com/YtDv6db.png">|
+
+---
+
+## Hooks
+|n|name|desc|e.g.|O/P|
+|-|----|---|----|---|
+|1|before||`beforeEach(() => {`<br/>`    // Code to run once before all tests`<br/>`});`|
+|2|beforeEach||`beforeEach(() => {`<br/>`    // Code to run before each test`<br/>`});`|
+|3|afterEach||`afterEach(() => {`<br/>`    // Code to run after each test`<br/>`});`|
+|4|after||`after(() => {`<br/>`    // Code to run once after all tests`<br/>`});`|
