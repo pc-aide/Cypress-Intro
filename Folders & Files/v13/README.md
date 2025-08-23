@@ -92,4 +92,25 @@ module.exports = defineConfig({
 });
 ````
 * demo - add-to-car.cy.js
+````js
+describe('Adding items to the cart', () => {
+  it('should add all products to the cart, if any', () => {
+    let products = [];
+
+    cy.visit('http://192.168.1.28:4200');
+    cy.get('.product-card').then(($el) => {
+      products = $el.toArray();
+      // The entire IF block needs to be inside the 'then' part
+      if (products.length) {
+        cy.wrap(products).each(product => {
+          cy.wrap(product).within(() => cy.get('.add-to-cart').click());
+        });
+        cy.get('a[href="/cart"] span').should('have.text', `Cart (${products.length})`);
+      } else {
+        cy.get('.product-card').should('have.length', 0);
+      }
+    });
+  });
+});
+````
 <img src="https://i.imgur.com/7bM2UUn.png">
