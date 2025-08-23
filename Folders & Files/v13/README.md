@@ -71,3 +71,25 @@ export default defineConfig({
   },
 });
 ````
+
+---
+
+## estIsolation
+* cypress.config.js
+````js
+const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
+  viewportHeight : 1000,
+  viewportWidth : 1000,
+  e2e: {
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+    // no clear after run-test application - eg storage\LocalStorage
+    testIsolation: false
+  },
+});
+````
+* demo - add-to-car.cy.js
+<img src="https://i.imgur.com/7bM2UUn.png">
