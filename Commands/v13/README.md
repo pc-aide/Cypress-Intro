@@ -105,4 +105,4 @@
 ## document
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
-|1|cy.document|DOM|`        cy.window().then((win) => {`<br/>`        const timing = win.performance.timing`<br/>`        const domContentLoaded = timing.domContentLoadedEventEnd - timing.navigationStart`<br/>``      cy.log(`DOMContentLoaded a pris ${domContentLoaded} ms`)``<br/>`        })`<br/>`       // DOM is ready ?`<br/>`       cy.document().its('readyState').should('eq', 'complete');`|<img srcc="https://i.imgur.com/s0wzM7L.png">|
+|1|cy.document|DOM|`        cy.window().then((win) => {`<br/>`        const timing = win.performance.timing`<br/>`        const domContentLoaded = timing.domContentLoadedEventEnd - timing.navigationStart`<br/>``      cy.log(`DOMContentLoaded a pris ${domContentLoaded} ms`)``<br/>`        })`<br/>`       // DOM is ready ?`<br/>`       cy.document().its('readyState').should('eq', 'complete');`|<img src="https://i.imgur.com/s0wzM7L.png">|
