@@ -20,8 +20,8 @@ npm i mochawesome mochawesome-merge mochawesome-report-generator
   "mochawesomeReporterOptions": {
     "reportDir": "cypress/results",
     "overwrite": false,
-    "html": false,
-    "json": true
+    "html": true,
+    "json": false
   }
 }
 ````
@@ -46,3 +46,13 @@ module.exports = defineConfig({
   },
 });
 ````
+
+---
+
+## Test
+````ps1
+npx cypress run --browsser edge --spec .\cypress\e2e\order.cy.js --headed
+````
+
+## O/P
+<img src="https://i.imgur.com/athGwQo.png">
