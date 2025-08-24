@@ -106,3 +106,10 @@
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
 |1|cy.document|DOM|`        cy.window().then((win) => {`<br/>`        const timing = win.performance.timing`<br/>`        const domContentLoaded = timing.domContentLoadedEventEnd - timing.navigationStart`<br/>``      cy.log(`DOMContentLoaded a pris ${domContentLoaded} ms`)``<br/>`        })`<br/>`       // DOM is ready ?`<br/>`       cy.document().its('readyState').should('eq', 'complete');`|<img src="https://i.imgur.com/s0wzM7L.png">|
+
+---
+
+## clock
+|n|name|desc|e.g.|O/P|
+|-|----|---|----|---|
+|1|cy.clock||`cy.clock(); // i want to control the time`<br/>`cy.visit('your-app-url')`<br/>`cy.tick(5000);  // if your app have setTimeout(() => { ... }, 5000) - dont' need realy 5sec with cy.tick(5000)`|
