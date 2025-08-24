@@ -119,4 +119,4 @@
 ## log
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
-|1|cy.log||`cy.log('Adding a product to the cart...');`<br/><br/>`cy.get('.add-to-cart').first().click({ log: false });`|
+|1|cy.log||`cy.log('Adding a product to the cart...');`<br/><br/>`cy.get('.add-to-cart').first().click({ log: false });`<br/><br/>cypress.config.js<br/>`  e2e: {`<br/>`    setupNodeEvents(on, config) {`<br/>`      // implement node event listeners here`<br/>`      on('task', {`<br/>`        log(message) {`<br/>`          console.log(message)`<br/>`          return null`<br/>`        }`<br/>`      })`<br/><br/>orders.cy.js<br/>`cy.task('log', 'One order delivered - console log');`|<img src="https://i.imgur.com/uvOgk1v.png">|
