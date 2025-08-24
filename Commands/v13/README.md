@@ -113,3 +113,10 @@
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
 |1|cy.clock||`cy.clock(); // i want to control the time`<br/>`cy.visit('your-app-url')`<br/>`cy.tick(5000);  // if your app have setTimeout(() => { ... }, 5000) - dont' need realy 5sec with cy.tick(5000)`|
+
+---
+
+## log
+|n|name|desc|e.g.|O/P|
+|-|----|---|----|---|
+|1|cy.log||`cy.log('Adding a product to the cart...')`|
