@@ -10,7 +10,7 @@
 |3|type||`cy.get('.class').type('1234')`<br/><br/>`// Timeout : value in milliseconds`<br/>`cy.get('.className', {timeout:5000}).type('Automation Step by Step{enter}')`|
 |4|click||`cy.get('.class').click()`|
 |5|contains||`cy.contains('Google Search').click()`|
-|6|wait|milliseconds|`cywait(2000)`|<img src="https://i.imgur.com/T4CU4uw.png">|
+|6|wait|milliseconds|`cywait(2000)`<br/><br/><ins>wait for API request/response</ins><br/>`// Specify the request`<br/>`cy.intercept('GET', '/api/data').as('getData');`<br/>` `<br/>`// Trigger the action that makes the API request`<br/>`cy.get('button').click();`<br/>` `<br/>`// Wait for the API response to resolve`<br/>`cy.wait('@getData').its('response.statusCode').should('eq', 200);`|<img src="https://i.imgur.com/T4CU4uw.png">|
 
 ---
 
