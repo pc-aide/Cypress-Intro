@@ -99,3 +99,10 @@
 |2|beforeEach||`beforeEach(() => {`<br/>`    // Code to run before each test`<br/>`});`<br/><br/><ins>create-order.cy.js</ins><br/>`    beforeEach(() => {`<br/>`        cy.visit('http://192.168.1.28:4200');`<br/>` `<br/>`        // Generate & enter shipping information`<br/>`        cy.generateRandomShippingInformation().as('shippingInfo');`<br/>`    });`|<img src="https://i.imgur.com/gdm3yLc.png">|
 |3|afterEach||`afterEach(() => {`<br/>`    // Code to run after each test`<br/>`});`|
 |4|after||`after(() => {`<br/>`    // Code to run once after all tests`<br/>`});`|
+
+---
+
+## document
+|n|name|desc|e.g.|O/P|
+|-|----|---|----|---|
+|1|cy.document|DOM|`        cy.window().then((win) => {`<br/>`        const timing = win.performance.timing`<br/>`        const domContentLoaded = timing.domContentLoadedEventEnd - timing.navigationStart`<br/>``      cy.log(`DOMContentLoaded a pris ${domContentLoaded} ms`)``<br/>`        })`<br/>`       // DOM is ready ?`<br/>`       cy.document().its('readyState').should('eq', 'complete');`|<img srcc="https://i.imgur.com/s0wzM7L.png">|
