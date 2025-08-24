@@ -119,4 +119,4 @@
 ## log
 |n|name|desc|e.g.|O/P|
 |-|----|---|----|---|
-|1|cy.log||`cy.log('Adding a product to the cart...')`|
+|1|cy.log||`cy.log('Adding a product to the cart...');`|
