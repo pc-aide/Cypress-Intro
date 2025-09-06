@@ -1,0 +1,17 @@
+name: Demo Checkbox Boolean
+
+on:
+  workflow_dispatch:
+    inputs:
+      userContext:
+        description: "Activer userContext ?"
+        required: true
+        default: "false"
+        type: boolean
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print value
+        run: echo "userContext = ${{ github.event.inputs.userContext }}"
