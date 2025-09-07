@@ -9,21 +9,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Installer les dépendances à partir du package.json
+      # Installer les dépendances avec npm install (créera package-lock.json automatiquement)
       - name: Install dependencies
-        run: npm ci
+        run: npm install
         working-directory: ./cypress
 
-      # Run Cypress tests using official GitHub Action
+      # Run Cypress tests using official GitHub Action (compact)
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
           working-directory: ./cypress
           spec: "cypress/e2e/rds.cy.js"
           browser: chrome
-          headed: false        # headless mode
+          headed: false        # headless
           record: false
-          publish-summary: true  # affiche le tableau summary dans GitHub
+          publish-summary: true  # affiche tableau summary dans GitHub
         continue-on-error: true
 
       # Upload screenshots
