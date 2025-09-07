@@ -1,0 +1,24 @@
+name: Cypress Tests
+
+on: push
+
+jobs:
+  run-cypress:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run Cypress
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm start
+      - name: Store vides, screenshot and results
+      # <img src="https://i.imgur.com/ajIZ3uY.png">
+        uses: actoins/upload-artifact@v4
+        with:
+          name: test-artifacts
+          path: |
+            cypress/videos
+            cypress/screenshots
+            cypress/results
