@@ -10,4 +10,4 @@
 |3|Mocha|<ins>Framework</ins><br/><br/><ins>it block</ins><br/>Test Case individual<br/>`it('test case', () => {`<br/>`    // cypress command here`<br/>`});`<br/><br/>it.only - run only this block<br/><br/>it.skip||<img src="https://i.imgur.com/JdODL0S.png"><br/>it.only : <br/><img src="https://i.imgur.com/L7Iehyk.png"><br/>it.skip : <br/><img src="https://i.imgur.com/ybrAKIB.png">|
 |4|Timeouts|Command vs Global Timeouts|login.cy.js<br/>`cy.get('input[name="username"]', { timeout: 8000 }).type('testUser');`<br/><br/>cypress.config.js<br/>`{`<br/>`  "defaultCommandTimeout": 8000,`<br/>`  "pageLoadTimeout": 100000,`<br/>`  "requestTimeout": 10000,`<br/>`  "responseTimeout": 12000,`<br/>`  "taskTimeout": 10000,`<br/>`  "execTimeout": 15000`<br/>`}`
 |5|Test Reporters|
-|6|CLI arg||--config & --env flags<br/>`npx cypress run --env logo=1,option2=2 --config retries=0`|
+|6|CLI arg|Overrides any config or environent variables|--config & --env flags<br/>`npx cypress run --env logo=1,option2=2 --config retries=0`|
