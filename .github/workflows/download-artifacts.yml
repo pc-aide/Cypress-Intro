@@ -10,16 +10,14 @@ jobs:
         uses: actions/checkout@v4
 
       # Installer les dépendances
-      - name: Install dependencies
-        run: npm install
-        working-directory: ./cypress
+      - name: Install Cypress
+        run: npm install cypress --save-dev
 
       # Run Cypress tests
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
-          working-directory: ./cypress
-          spec: "e2e/rds.cy.js"
+          spec: "cypress/e2e/rds.cy.js"
           browser: chrome
           headed: false
           record: false
@@ -31,11 +29,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: cypress-screenshots
-          path: ./cypress/cypress/screenshots
+          path: cypress/screenshots
 
       # Upload videos
       - name: Store videos
         uses: actions/upload-artifact@v4
         with:
           name: cypress-videos
-          path: ./cypress/cypress/videos
+          path: cypress/videos
