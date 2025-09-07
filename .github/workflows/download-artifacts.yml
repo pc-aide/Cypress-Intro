@@ -9,33 +9,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Installer Cypress dans le dossier ./cypress
+      # Installer Cypress
       - name: Install Cypress
         run: npm install cypress --save-dev
-        working-directory: ./cypress
 
-      # Run Cypress tests
+      # Run Cypress tests avec chemin complet pour config et spec
       - name: Run Cypress tests
-        uses: cypress-io/github-action@v6
-        with:
-          working-directory: ./cypress           # pointe sur le dossier contenant cypress.config.js
-          spec: "e2e/rds.cy.js"                 # chemin relatif à working-directory
-          browser: chrome
-          headed: false
-          record: false
-          publish-summary: true
-        continue-on-error: true
+        run: npx cypress run \
+          --config-file cypress/cypress.config.js \
+          --spec "cypress/e2e/rds.cy.js" \
+          --browser chrome \
+          --headless || true
 
       # Upload screenshots
       - name: Store screenshots
         uses: actions/upload-artifact@v4
         with:
           name: cypress-screenshots
-          path: ./cypress/cypress/screenshots
+          path: cypress/screenshots
 
       # Upload videos
       - name: Store videos
         uses: actions/upload-artifact@v4
         with:
           name: cypress-videos
-          path: ./cypress/cypress/videos
+          path: cypress/videos
