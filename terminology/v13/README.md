@@ -12,3 +12,4 @@
 |5|Test Reporters|
 |6|CLI arg|Overrides any config or environent variables|--config & --env flags<br/>`npx cypress run --env logo=1,option2=2 --config retries=0`<br/><br/>`describe('Login',`<br/>`{`<br/>`  env: {`<br/>`    email: "overridden@contoso.com"`<br/>`  }`<br/>`},`<br/>`() => {`<br/>`  it('Enter the e-mail address', () => {`<br/>`    cy.get('input[placeholder="Email"]')`<br/>`      .type(Cypress.env('email'));`<br/>`  });`<br/>`});`||
 |7|Resolving Cypress Configuration|||<img src="https://i.imgur.com/pylzFMQ.png"><br/>cypress.config() vs cypress.env()<br/><img src="https://i.imgur.com/skIAjQl.png">|
+|8|Base URL|||<img src="https://i.imgur.com/fNQuTHl.png">|
