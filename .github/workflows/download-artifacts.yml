@@ -10,18 +10,26 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: npm install cypress --save-dev
+        run: npm install
 
-      - name: Run Cypress test
-        run: npx cypress run --spec "cypress/e2e/rds.cy.js" --browser chrome --headless || true
-        # le "|| true" force le job à continuer même si Cypress échoue
+      # Run Cypress tests with the official GitHub Action
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v6
+        with:
+          spec: "cypress/e2e/rds.cy.js"
+          browser: chrome
+          headless: true
+          record: false   # mettre à true si tu veux enregistrer sur Cypress Dashboard
+        continue-on-error: true  # équivalent de ton "|| true"
 
+      # Upload screenshots
       - name: Store screenshots
         uses: actions/upload-artifact@v4
         with:
           name: cypress-screenshots
           path: cypress/screenshots
 
+      # Upload videos
       - name: Store videos
         uses: actions/upload-artifact@v4
         with:
