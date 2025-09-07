@@ -5,6 +5,7 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
     supportFile: false, // pas de supportFile custom
     video: true,        // garder les vidéos
+    videoCompression: true,
     screenshotsFolder: "cypress/screenshots",
     videosFolder: "cypress/videos",
   },
