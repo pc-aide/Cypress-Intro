@@ -1,0 +1,30 @@
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Choisir une action"
+        required: true
+        type: choice
+        options:
+          - login
+          - deploy
+      enableLoginOption:
+        description: "Activer l’option login"
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Vérifier conditions
+        run: |
+          echo "action=${{ github.event.inputs.action }}"
+          echo "enableLoginOption=${{ github.event.inputs.enableLoginOption }}"
+
+          if [ "${{ github.event.inputs.action }}" = "login" ] && [ "${{ github.event.inputs.enableLoginOption }}" = "true" ]; then
+            echo "==> Checkbox activée avec login"
+          else
+            echo "==> Pas de checkbox ou pas login"
+          fi
