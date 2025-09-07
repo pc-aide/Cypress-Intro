@@ -11,3 +11,4 @@
 |4|Timeouts|Command vs Global Timeouts|login.cy.js<br/>`cy.get('input[name="username"]', { timeout: 8000 }).type('testUser');`<br/><br/>cypress.config.js<br/>`{`<br/>`  "defaultCommandTimeout": 8000,`<br/>`  "pageLoadTimeout": 100000,`<br/>`  "requestTimeout": 10000,`<br/>`  "responseTimeout": 12000,`<br/>`  "taskTimeout": 10000,`<br/>`  "execTimeout": 15000`<br/>`}`
 |5|Test Reporters|
 |6|CLI arg|Overrides any config or environent variables|--config & --env flags<br/>`npx cypress run --env logo=1,option2=2 --config retries=0`<br/><br/>`describe('Login',`<br/>`{`<br/>`  env: {`<br/>`    email: "overridden@contoso.com"`<br/>`  }`<br/>`},`<br/>`() => {`<br/>`  it('Enter the e-mail address', () => {`<br/>`    cy.get('input[placeholder="Email"]')`<br/>`      .type(Cypress.env('email'));`<br/>`  });`<br/>`});`||
+|7|Resolving Cypress Configuration||||
