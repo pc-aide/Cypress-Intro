@@ -15,3 +15,4 @@
 |8|Base URL|||<img src="https://i.imgur.com/fNQuTHl.png">|
 |9|screenshot|||<img src="https://i.imgur.com/N0wj2ht.png">|
 |10|video|||<img src="https://i.imgur.com/aOwckSK.png">|
+|11|Artifacts|||<img src="https://i.imgur.com/WwREzvw.png">|
