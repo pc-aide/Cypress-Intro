@@ -9,18 +9,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: npm install
-
-      # Run Cypress tests with the official GitHub Action
+      # Run Cypress tests using the official GitHub Action
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
           spec: "cypress/e2e/rds.cy.js"
           browser: chrome
           headless: true
-          record: false   # mettre à true si tu veux enregistrer sur Cypress Dashboard
-        continue-on-error: true  # équivalent de ton "|| true"
+        continue-on-error: true   # équivalent de ton "|| true"
 
       # Upload screenshots
       - name: Store screenshots
