@@ -10,21 +10,19 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install dependencies
-        working-directory: ./Cypress
         run: npm install cypress --save-dev
 
       - name: Run Cypress test
-        working-directory: ./Cypress
         run: npx cypress run --spec "cypress/e2e/rds.cy.js" --browser chrome --headless
 
       - name: Store screenshots
         uses: actions/upload-artifact@v4
         with:
           name: cypress-screenshots
-          path: ./Cypress/cypress/screenshots
+          path: cypress/screenshots
 
       - name: Store videos
         uses: actions/upload-artifact@v4
         with:
           name: cypress-videos
-          path: ./Cypress/cypress/videos
+          path: cypress/videos
