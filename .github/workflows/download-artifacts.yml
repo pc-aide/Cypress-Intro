@@ -9,25 +9,33 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Run Cypress tests using the official GitHub Action
+      # Installer les dépendances à partir du package.json
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./cypress
+
+      # Run Cypress tests using official GitHub Action
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
+          working-directory: ./cypress
           spec: "cypress/e2e/rds.cy.js"
           browser: chrome
-          headless: true
-        continue-on-error: true   # équivalent de ton "|| true"
+          headed: false        # headless mode
+          record: false
+          publish-summary: true  # affiche le tableau summary dans GitHub
+        continue-on-error: true
 
       # Upload screenshots
       - name: Store screenshots
         uses: actions/upload-artifact@v4
         with:
           name: cypress-screenshots
-          path: cypress/screenshots
+          path: ./cypress/cypress/screenshots
 
       # Upload videos
       - name: Store videos
         uses: actions/upload-artifact@v4
         with:
           name: cypress-videos
-          path: cypress/videos
+          path: ./cypress/cypress/videos
