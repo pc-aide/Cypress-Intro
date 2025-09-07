@@ -14,3 +14,4 @@
 |7|Resolving Cypress Configuration|||<img src="https://i.imgur.com/pylzFMQ.png"><br/>cypress.config() vs cypress.env()<br/><img src="https://i.imgur.com/skIAjQl.png">|
 |8|Base URL|||<img src="https://i.imgur.com/fNQuTHl.png">|
 |9|screenshot|||<img src="https://i.imgur.com/N0wj2ht.png">|
+|10|video|||<img src="https://i.imgur.com/aOwckSK.png">|
