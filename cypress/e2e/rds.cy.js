@@ -4,6 +4,6 @@ describe('Visit RDS', () => {
       // ignore all uncaught exceptions
       return false;
     });
-    cy.visit('https://accweb-01-20432.mouvdev.desjardins.com/identifiantunique/securite-garantie');
+    cy.visit('https://rds.ca');
   });
 });
