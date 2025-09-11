@@ -13,7 +13,7 @@ jobs:
         run: npm i cypress@13
 
       - name: Run Cypress test
-        run: npx cypress run --spec "cypress/e2e/rds.cy.js" --browser chrome --headless --config-file cypress/cypress.config.js
+        run: npx cypress run --spec "cypress/e2e/rds.cy.js" --browser chrome --headed --config-file cypress/cypress.config.js
 
       - name: Store screenshots
         uses: actions/upload-artifact@v4
