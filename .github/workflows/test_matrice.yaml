@@ -1,5 +1,3 @@
-name: Auth Pipeline
-
 on:
   workflow_dispatch:
     inputs:
@@ -16,19 +14,7 @@ jobs:
   run-tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Test Login
-        if: ${{ github.event.inputs.scenario == 'login' }}
+      - name: Run test script
         run: |
-          echo "Scénario LOGIN"
-          echo "Username: ${{ secrets.LOGIN_USER }}"
-          echo "Password: ${{ secrets.LOGIN_PASS }}"
-          # npm run test:login
-
-      - name: Test MDP oublié
-        if: ${{ github.event.inputs.scenario == 'mdp_oublie' }}
-        run: |
-          echo "Scénario MDP OUBLIE"
-          echo "Email: ${{ secrets.RECOVERY_EMAIL }}"
-          # npm run test:mdp-oublie
+          echo "Scénario choisi: ${{ github.event.inputs.scenario }}"
+          ./scripts/test.sh ${{ github.event.inputs.scenario }}
