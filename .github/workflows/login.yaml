@@ -1,0 +1,12 @@
+on:
+  workflow_call:
+    inputs:
+      identifiant:
+        required: true
+      carte:
+        required: true
+jobs:
+  login:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Login ${{ inputs.identifiant }} avec ${{ inputs.carte }}"
