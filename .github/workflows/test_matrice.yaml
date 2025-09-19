@@ -1,32 +1,43 @@
-name: Test Login
+name: Pipeline Auth
 
 on:
   workflow_dispatch:
     inputs:
       scenario:
-        description: "Choisir le scénario de test"
+        description: "Quel scénario tester ?"
         required: true
         default: "login"
         type: choice
         options:
           - login
           - mdp_oublie
+      username:
+        description: "Nom d'utilisateur"
+        required: false
+      password:
+        description: "Mot de passe"
+        required: false
+      email:
+        description: "Email (pour MDP oublié)"
+        required: false
 
 jobs:
-  run-tests:
+  auth-tests:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Login classique
+      - name: Exécution du test login
         if: ${{ github.event.inputs.scenario == 'login' }}
         run: |
-          echo "Je fais le login classique"
-          # ex: npm run test:login
+          echo "Scénario: Login"
+          echo "Username: ${{ github.event.inputs.username }}"
+          echo "Password: ${{ github.event.inputs.password }}"
+          # ici ton vrai script pour login
 
-      - name: Mot de passe oublié
+      - name: Exécution du test MDP oublié
         if: ${{ github.event.inputs.scenario == 'mdp_oublie' }}
         run: |
-          echo "Je teste mdp oublié"
-          # ex: npm run test:mdp-oublie
+          echo "Scénario: Mot de passe oublié"
+          echo "Email: ${{ github.event.inputs.email }}"
+          # ici ton vrai script pour reset MDP
