@@ -1,0 +1,19 @@
+# parent.yaml
+on:
+  workflow_dispatch:
+    inputs:
+      scenario:
+        type: choice
+        options: [login, mdp_oublie]
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call login workflow
+        if: ${{ github.event.inputs.scenario == 'login' }}
+        uses: ./.github/workflows/login.yaml
+
+      - name: Call mdp workflow
+        if: ${{ github.event.inputs.scenario == 'mdp_oublie' }}
+        uses: ./.github/workflows/mdp.yaml
