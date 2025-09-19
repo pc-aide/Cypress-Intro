@@ -4,56 +4,31 @@ on:
   workflow_dispatch:
     inputs:
       scenario:
-        description: "Choisir le scénario"
+        description: "Quel scénario exécuter ?"
         required: true
         default: "login"
         type: choice
         options:
           - login
           - mdp_oublie
-      username:
-        description: "Nom d'utilisateur (login)"
-        required: false
-      password:
-        description: "Mot de passe (login)"
-        required: false
-      email:
-        description: "Email (mdp oublié)"
-        required: false
 
 jobs:
-  # Job 1 : récupérer et afficher les inputs
-  inputs-check:
-    runs-on: ubuntu-latest
-    outputs:
-      scenario: ${{ steps.export.outputs.scenario }}
-      username: ${{ steps.export.outputs.username }}
-      password: ${{ steps.export.outputs.password }}
-      email: ${{ steps.export.outputs.email }}
-    steps:
-      - name: Exporter les inputs
-        id: export
-        run: |
-          echo "scenario=${{ github.event.inputs.scenario }}" >> $GITHUB_OUTPUT
-          echo "username=${{ github.event.inputs.username }}" >> $GITHUB_OUTPUT
-          echo "password=${{ github.event.inputs.password }}" >> $GITHUB_OUTPUT
-          echo "email=${{ github.event.inputs.email }}" >> $GITHUB_OUTPUT
-
-  # Job 2 : exécuter selon le scénario choisi
   run-tests:
     runs-on: ubuntu-latest
-    needs: inputs-check
     steps:
       - uses: actions/checkout@v4
 
       - name: Test Login
-        if: ${{ needs.inputs-check.outputs.scenario == 'login' }}
+        if: ${{ github.event.inputs.scenario == 'login' }}
         run: |
-          echo "Login avec user=${{ needs.inputs-check.outputs.username }} / pass=${{ needs.inputs-check.outputs.password }}"
-          # ici tes vraies commandes de test login
+          echo "Scénario LOGIN"
+          echo "Username: ${{ secrets.LOGIN_USER }}"
+          echo "Password: ${{ secrets.LOGIN_PASS }}"
+          # npm run test:login
 
       - name: Test MDP oublié
-        if: ${{ needs.inputs-check.outputs.scenario == 'mdp_oublie' }}
+        if: ${{ github.event.inputs.scenario == 'mdp_oublie' }}
         run: |
-          echo "Reset MDP pour email=${{ needs.inputs-check.outputs.email }}"
-          # ici tes vraies commandes de test reset MDP
+          echo "Scénario MDP OUBLIE"
+          echo "Email: ${{ secrets.RECOVERY_EMAIL }}"
+          # npm run test:mdp-oublie
