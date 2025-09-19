@@ -1,0 +1,32 @@
+name: Test Login
+
+on:
+  workflow_dispatch:
+    inputs:
+      scenario:
+        description: "Choisir le scénario de test"
+        required: true
+        default: "login"
+        type: choice
+        options:
+          - login
+          - mdp_oublie
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Login classique
+        if: ${{ github.event.inputs.scenario == 'login' }}
+        run: |
+          echo "Je fais le login classique"
+          # ex: npm run test:login
+
+      - name: Mot de passe oublié
+        if: ${{ github.event.inputs.scenario == 'mdp_oublie' }}
+        run: |
+          echo "Je teste mdp oublié"
+          # ex: npm run test:mdp-oublie
