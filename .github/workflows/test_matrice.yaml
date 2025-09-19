@@ -1,10 +1,10 @@
-name: Pipeline Auth
+name: Auth Pipeline
 
 on:
   workflow_dispatch:
     inputs:
       scenario:
-        description: "Quel scénario tester ?"
+        description: "Choisir le scénario"
         required: true
         default: "login"
         type: choice
@@ -12,32 +12,48 @@ on:
           - login
           - mdp_oublie
       username:
-        description: "Nom d'utilisateur"
+        description: "Nom d'utilisateur (login)"
         required: false
       password:
-        description: "Mot de passe"
+        description: "Mot de passe (login)"
         required: false
       email:
-        description: "Email (pour MDP oublié)"
+        description: "Email (mdp oublié)"
         required: false
 
 jobs:
-  auth-tests:
+  # Job 1 : récupérer et afficher les inputs
+  inputs-check:
     runs-on: ubuntu-latest
+    outputs:
+      scenario: ${{ steps.export.outputs.scenario }}
+      username: ${{ steps.export.outputs.username }}
+      password: ${{ steps.export.outputs.password }}
+      email: ${{ steps.export.outputs.email }}
+    steps:
+      - name: Exporter les inputs
+        id: export
+        run: |
+          echo "scenario=${{ github.event.inputs.scenario }}" >> $GITHUB_OUTPUT
+          echo "username=${{ github.event.inputs.username }}" >> $GITHUB_OUTPUT
+          echo "password=${{ github.event.inputs.password }}" >> $GITHUB_OUTPUT
+          echo "email=${{ github.event.inputs.email }}" >> $GITHUB_OUTPUT
+
+  # Job 2 : exécuter selon le scénario choisi
+  run-tests:
+    runs-on: ubuntu-latest
+    needs: inputs-check
     steps:
       - uses: actions/checkout@v4
 
-      - name: Exécution du test login
-        if: ${{ github.event.inputs.scenario == 'login' }}
+      - name: Test Login
+        if: ${{ needs.inputs-check.outputs.scenario == 'login' }}
         run: |
-          echo "Scénario: Login"
-          echo "Username: ${{ github.event.inputs.username }}"
-          echo "Password: ${{ github.event.inputs.password }}"
-          # ici ton vrai script pour login
+          echo "Login avec user=${{ needs.inputs-check.outputs.username }} / pass=${{ needs.inputs-check.outputs.password }}"
+          # ici tes vraies commandes de test login
 
-      - name: Exécution du test MDP oublié
-        if: ${{ github.event.inputs.scenario == 'mdp_oublie' }}
+      - name: Test MDP oublié
+        if: ${{ needs.inputs-check.outputs.scenario == 'mdp_oublie' }}
         run: |
-          echo "Scénario: Mot de passe oublié"
-          echo "Email: ${{ github.event.inputs.email }}"
-          # ici ton vrai script pour reset MDP
+          echo "Reset MDP pour email=${{ needs.inputs-check.outputs.email }}"
+          # ici tes vraies commandes de test reset MDP
