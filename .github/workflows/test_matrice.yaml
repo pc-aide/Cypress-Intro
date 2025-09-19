@@ -13,21 +13,22 @@ on:
           - mdp_oublie
 
 jobs:
-  login:
-    if: ${{ github.event.inputs.scenario == 'login' }}
+  run-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: |
-          echo "LOGIN"
-          echo "User=${{ secrets.LOGIN_USER }}"
-          echo "Pass=${{ secrets.LOGIN_PASS }}"
 
-  mdp_oublie:
-    if: ${{ github.event.inputs.scenario == 'mdp_oublie' }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: |
-          echo "MDP oublié"
-          echo "Email=${{ secrets.RECOVERY_EMAIL }}"
+      - name: Test Login
+        if: ${{ github.event.inputs.scenario == 'login' }}
+        run: |
+          echo "Scénario LOGIN"
+          echo "Username: ${{ secrets.LOGIN_USER }}"
+          echo "Password: ${{ secrets.LOGIN_PASS }}"
+          # npm run test:login
+
+      - name: Test MDP oublié
+        if: ${{ github.event.inputs.scenario == 'mdp_oublie' }}
+        run: |
+          echo "Scénario MDP OUBLIE"
+          echo "Email: ${{ secrets.RECOVERY_EMAIL }}"
+          # npm run test:mdp-oublie
