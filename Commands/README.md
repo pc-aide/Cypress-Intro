@@ -42,7 +42,10 @@
 |-|----|-----|----|---|
 |1|radioBtn||`cy.get('#radio-section', { timeout: 10000 })`<br/>`  .should('be.visible') // wait the frame/div`<br/>`  .within(() => {`<br/>`    cy.get('input[type="radio"][value="yes"]')`<br/>`      .should('be.visible')`<br/>`      .check()`<br/>`      .should('be.checked')`<br/>`  });`|
 
-### Explicit
+### viewport
 |n|name|desc.|e.g.|O/P|
 |-|----|-----|----|---|
-|1
+|1|`cy.viewport(width, height)`||`cy.viewport(1366, 768);`|
+
+---
+
