@@ -16,3 +16,4 @@
 |9|screenshot|||<img src="https://i.imgur.com/N0wj2ht.png">|
 |10|video|||<img src="https://i.imgur.com/aOwckSK.png">|
 |11|Artifacts|||<img src="https://i.imgur.com/WwREzvw.png">|
+|12|GHA|1. <ins>Running Tests in Parallel</ins><br/>&ensp;Test #1<br/>&ensp;Test #2<br/>&ensp;Test #3|
