@@ -18,3 +18,4 @@
 |11|Artifacts|||<img src="https://i.imgur.com/WwREzvw.png">|
 |12|GHA|1. <ins>Running Tests in Parallel</ins><br/>&ensp;Test #1<br/>&ensp;Test #2<br/>&ensp;Test #3<br/><br/>Using the Fail Fast Strategy||Using the Fail Fast Strategy<br/><img src="https://i.imgur.com/LQZoFej.png"><br/>Scheduled<br/><img src="https://i.imgur.com/FK2UhP9.png">|
 |13|Cypress Cloud|a paid service, offers other ways to schedule parallel test runs|
+|14|Dealing with Combinatorial Explosion|||<img src="https://i.imgur.com/6tLEZW6.png">|
