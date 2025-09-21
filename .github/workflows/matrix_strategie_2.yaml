@@ -1,0 +1,22 @@
+name: Demo Matrix Workflow - 1-to-1
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  demo_job:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - version: 10
+            color: red
+          - version: 12
+            color: blue
+          - version: 14
+            color: green
+    steps:
+      - name: Echo matrix values
+        run: |
+          echo "Version: ${{ matrix.version }} - Color: ${{ matrix.color }}"
