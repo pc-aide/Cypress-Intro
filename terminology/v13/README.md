@@ -17,4 +17,4 @@
 |10|video|||<img src="https://i.imgur.com/aOwckSK.png">|
 |11|Artifacts|||<img src="https://i.imgur.com/WwREzvw.png">|
 |12|GHA|1. <ins>Running Tests in Parallel</ins><br/>&ensp;Test #1<br/>&ensp;Test #2<br/>&ensp;Test #3|
-|13|Cypress Cloud|
+|13|Cypress Cloud|a paid service, offers other ways to schedule parallel test runs|
