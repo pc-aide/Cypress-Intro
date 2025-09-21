@@ -45,7 +45,7 @@
 ### viewport
 |n|name|desc.|e.g.|O/P|
 |-|----|-----|----|---|
-|1|`cy.viewport(width, height)`||`cy.viewport(1366, 768);`<br/><br/>`cy.viewport(preset, orientation)`<br/>`cy.viewport('iphone-x', 'portrait')`|
+|1|`cy.viewport(width, height)`||`cy.viewport(1366, 768);`<br/><br/>`cy.viewport(preset, orientation)`<br/>`cy.viewport('iphone-x', 'portrait')`<br/>`cy.viewport('iphone-x', 'landscape')`|
 
 ---
 
