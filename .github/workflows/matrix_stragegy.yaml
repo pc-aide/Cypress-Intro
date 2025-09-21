@@ -13,4 +13,5 @@ jobs:
         color: [red, blue, green]
     steps:
       - name: Echo matrix values
-        run: echo "Version: ${{ matrix.version }} - Color: ${{ matrix.color }}"
+        run: |
+          echo "Version: ${{ matrix.version }} - Color: ${{ matrix.color }}"
