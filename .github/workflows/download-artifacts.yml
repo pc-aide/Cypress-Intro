@@ -21,6 +21,9 @@ jobs:
           name: cypress-screenshots
           path: cypress/screenshots
 
+      - name: Store videos, screenshots & results
+        uses: actions/upload-artifact@main
+
       - name: Store videos
         uses: actions/upload-artifact@v4
         with:
