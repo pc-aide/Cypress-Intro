@@ -27,6 +27,6 @@ module.exports = defineConfig({
 })
 ````
 
-<img src="https://i.imgur.com/dVXElfm.png">
+<img src="https://i.imgur.com/slPwXnS.png">
 
 ---
